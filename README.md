@@ -7,6 +7,7 @@ The API is available at https://simple-books-api.glitch.me
 Endpoints:
 
 1.Status
+
 GET /status
 
 Returns the status of the API.
@@ -14,6 +15,7 @@ Returns the status of the API.
 
 
 2.List of books
+
 GET /books
 
 Returns a list of books.
@@ -25,12 +27,14 @@ limit: a number between 1 and 20.
 
 
 3.Get a single book
+
 GET /books/:bookId
 
 Retrieve detailed information about a book.
 
 
 4.Submit an order
+
 POST /orders
 
 Allows you to submit a new order. Requires authentication.
@@ -53,6 +57,7 @@ The response body will contain the order Id.
 
 
 5.Get all orders
+
 GET /orders
 
 Allows you to view all orders. Requires authentication.
@@ -60,6 +65,7 @@ Allows you to view all orders. Requires authentication.
 
 
 6.Get an order
+
 GET /orders/:orderId
 
 Allows you to view an existing order. Requires authentication.
@@ -67,6 +73,7 @@ Allows you to view an existing order. Requires authentication.
 
 
 7.Update an order
+
 PATCH /orders/:orderId
 
 Update an existing order. Requires authentication.
@@ -86,6 +93,7 @@ Authorization: Bearer <YOUR TOKEN>
 
 
 8.Delete an order
+
 DELETE /orders/:orderId
 
 Delete an existing order. Requires authentication.
@@ -101,6 +109,7 @@ Authorization: Bearer <YOUR TOKEN>
 
 
 9.API Authentication
+
 To submit or view an order, you need to register your API client.
 
 POST /api-clients/
