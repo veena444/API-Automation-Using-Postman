@@ -117,13 +117,16 @@ POST /api-clients/
 The request body needs to be in JSON format and include the following properties:
 
 clientName - String
+
 clientEmail - String
+
 Example
 
 {
    "clientName": "John",
    "clientEmail": "john@example.com"
 }
+
 The response body will contain the access token. The access token is valid for 7 days.
 
 Possible errors
